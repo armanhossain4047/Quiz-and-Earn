@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/opening_bg_vector03"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opening">
+    <TextView
+        android:id="@+id/persistent_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Ofline"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#525050"
+        android:textSize="24sp"
+        android:visibility="invisible"/>
+    <RelativeLayout
+        android:id="@+id/lotti_layout"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/quiz"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/singbtn_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:visibility="invisible"
+        android:padding="16dp">
+        <Button
+            android:id="@+id/sing_in_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sing_in"
+            android:contentDescription="singbutton"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/sing_in_btn_id"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/already_have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/sign_in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/already_have_account"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sign_up"
+                android:textColor="@color/link"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036591194076",
+    "project_id": "quiz-and-earn-dual-mode-system",
+    "storage_bucket": "quiz-and-earn-dual-mode-system.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036591194076:android:f0c33c3d44f8184447f919",
+        "android_client_info": {
+          "package_name": "com.example.androidapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaK_Mo723RzcHxS9KzNFBk5xjn2YcuFoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
